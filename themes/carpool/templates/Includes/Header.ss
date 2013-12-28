@@ -12,6 +12,9 @@
     <div class="navbar-collapse collapse">
       
       <!-- New Form -->
+      <% if !CurrentMember %>
+        WOW
+      <% end_if %>
       <form id="MemberLoginForm_LoginForm" action="Security/LoginForm" method="post" enctype="application/x-www-form-urlencoded" class="navbar-form navbar-right" role="form">
         <p id="MemberLoginForm_LoginForm_error" class="message " style="display: none"></p>
         <fieldset>
