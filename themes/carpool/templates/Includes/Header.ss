@@ -9,12 +9,15 @@
       </button>
       <a class="navbar-brand" href="#">Gadi looo</a>
     </div>
+    
+
     <div class="navbar-collapse collapse">
       
       <!-- New Form -->
-      <% if !CurrentMember %>
-        WOW
-      <% end_if %>
+      <% if CurrentUser %>
+        Hello $CurrentUser.FirstName
+      <% else %>
+
       <form id="MemberLoginForm_LoginForm" action="Security/LoginForm" method="post" enctype="application/x-www-form-urlencoded" class="navbar-form navbar-right" role="form">
         <p id="MemberLoginForm_LoginForm_error" class="message " style="display: none"></p>
         <fieldset>
@@ -35,10 +38,10 @@
           </div>
 
           <input type="submit" name="action_dologin" value="Sign in" class="action btn btn-success" id="MemberLoginForm_LoginForm_action_dologin">
-
+          <a href="Register" id="register" class="btn btn-success">Register</a>
 
           
-          <input type="hidden" name="BackURL" value="/member/" class="hidden" id="MemberLoginForm_LoginForm_BackURL">
+          <input type="hidden" name="BackURL" value="/member/dashboard/" class="hidden" id="MemberLoginForm_LoginForm_BackURL">
           <div class="clear"><!-- --></div>
         </fieldset>
 
@@ -48,6 +51,9 @@
         </div>
       </form>
 
+
+      <% end_if %>
+
       <!-- End New Form -->
 
 
@@ -55,11 +61,5 @@
   </div>
 </div>
 
-<!-- Main jumbotron for a primary marketing message or call to action -->
-<div class="jumbotron">
-  <div class="container">
-    <h1>Hello, world!</h1>
-    <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-    <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
-  </div>
-</div>
+
+
