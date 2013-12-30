@@ -2,12 +2,17 @@
   font: 100% $font-stack;
   color: $primary-color;
 }*/
-/* line 9, ../sass/layout.scss */
+/* line 10, ../sass/layout.scss */
+.inner .jumbotron {
+  padding-top: 78px;
+}
+
+/* line 15, ../sass/layout.scss */
 #MemberLoginForm_LoginForm_action_dologin {
   margin-left: 4px;
 }
 
-/* line 16, ../sass/layout.scss */
-.main .inner .content-container .content {
-  padding: 10px 60px;
+/* line 19, ../sass/layout.scss */
+.main {
+  padding: 80px 60px;
 }

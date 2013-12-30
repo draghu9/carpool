@@ -38,7 +38,7 @@
           </div>
 
           <input type="submit" name="action_dologin" value="Sign in" class="action btn btn-success" id="MemberLoginForm_LoginForm_action_dologin">
-          <a href="Register" id="register" class="btn btn-success">Register</a>
+          <a href="/member/" id="register" class="btn btn-success">Register</a>
 
           
           <input type="hidden" name="BackURL" value="/member/dashboard/" class="hidden" id="MemberLoginForm_LoginForm_BackURL">

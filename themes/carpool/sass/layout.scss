@@ -6,16 +6,16 @@ $primary-color: #399;
   color: $primary-color;
 }*/
 
+.inner {
+	.jumbotron {
+		padding-top: 78px;
+	}
+}
+
 #MemberLoginForm_LoginForm_action_dologin {
 	margin-left: 4px;
 }
 
 .main {
-	.inner {
-		.content-container {
-			.content {
-				padding: 10px 60px;
-			}
-		}
-	}
+		padding: 80px 60px;		
 }
